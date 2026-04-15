@@ -1,0 +1,11 @@
+{
+  "config.unlimitedelytra.airresistance": "Air Resistance",
+  "config.unlimitedelytra.comfirm": "Comfirm",
+  "config.unlimitedelytra.enableelytra": "Enable Unlimited Elytra",
+  "config.unlimitedelytra.enableelytra.desc": "If true, the Unlimited Elytra will be enabled",
+  "config.unlimitedelytra.fireworkacceleration": "The acceleration of the firework",
+  "config.unlimitedelytra.infinitefireworkacceleration": "Infinite FireWork Acceleration",
+  "config.unlimitedelytra.infinitefireworkacceleration.desc": "If true, the player can be infinitely accelerated by fireworks",
+  "config.unlimitedelytra.title": "Unlimited Elytra Config",
+  "mod.unlimitedelytra": "Unlimited Elytra"
+}

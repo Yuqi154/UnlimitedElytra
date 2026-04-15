@@ -73,9 +73,24 @@ public class ConfigScreen extends Screen {
     @Override
     public void onClose() {
         super.onClose();
-        Config.AirResistance.set(Double.valueOf(AirResistance.getValue()));
-        Config.FireWorkAcceleration.set(Double.valueOf(FireWorkAcceleration.getValue()));
-
+        
+        if (AirResistance != null && AirResistance.getValue() != null && !AirResistance.getValue().isEmpty()) {
+            try {
+                Config.AirResistance.set(Double.valueOf(AirResistance.getValue()));
+            } catch (NumberFormatException e) {
+                // Ignore invalid input
+            }
+        }
+        
+        if (FireWorkAcceleration != null && FireWorkAcceleration.getValue() != null && !FireWorkAcceleration.getValue().isEmpty()) {
+            try {
+                Config.FireWorkAcceleration.set(Double.valueOf(FireWorkAcceleration.getValue()));
+            } catch (NumberFormatException e) {
+                // Ignore invalid input
+            }
+        }
+        
+        Config.SPEC.save();
     }
 
 }
